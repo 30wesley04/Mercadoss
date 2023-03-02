@@ -22,6 +22,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.android.volley.AuthFailureError
 import com.android.volley.Request
+import com.android.volley.RequestQueue
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
@@ -137,7 +138,8 @@ class MainActivity : AppCompatActivity(){
             }
 
         }
-        queue.add(resultadoPost)
+
+
         val loc=localEdit?.text.toString()
         txtLocal.text="Local:$loc"
         val mdo=spinner.selectedItem.toString()
@@ -147,6 +149,7 @@ class MainActivity : AppCompatActivity(){
         }else{
             txtActivo.text="Activo economicamente: no"
         }
+        VolleySingleton.instance?.addToRequestQueue(resultadoPost)
     }
 
 }
