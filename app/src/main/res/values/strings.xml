@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Mercados</string>
+    <string-array name="mercados">
+        <item>5 de Mayo</item>
+        <item>Amalucan</item>
+        <item>Carmen Serdán “La Acocota”</item>
+        <item>Defensores de la República</item>
+        <item>Guadalupano</item>
+        <item>Joaquin Colombres</item>
+        <item>Jose Maria Morelos "El alto"</item>
+        <item>La libertad "El cuexcomate"</item>
+        <item>La Merced</item>
+        <item>Mayorazgo</item>
+        <item>Melchor Ocampo “El Carmen”</item>
+        <item>Nicolás Bravo “El Parral”</item>
+        <item>San Baltazar Campeche</item>
+        <item>Santa Anita</item>
+        <item>Santa María</item>
+        <item>Unidad Guadalupe</item>
+        <item>Venustiano Carranza</item>
+        <item>Vicente Suárez “La Piedad”</item>
+        <item>Xonaca</item>
+        <item>Xonacatepec I</item>
+        <item>Xonacatepec II</item>
+        <item>Mercado de Sabores Poblanos</item>
+        <item>Mercado de Pescados y Mariscos</item>
+        <item>MIGUEL HIDALGO-UNIÓN</item>
+        <item>IGNACIO ZARAGOZA</item>
+        <item>JOSÉ MARÍA MORELOS Y PAVÓN</item>
+        <item>INDEPENDENCIA</item>
+        <item>EMILIANO ZAPATA</item>
+        <item>HÉROES DE PUEBLA</item>
+        <item>FRANCISCO I. MADERO</item>
+        <item>Central de Abasto</item>
+        <item>alertActivationGPSTitle</item>
+        <item>alertActivationGPSDescription</item>
+        <item>acceptActivationGPSTitle</item>
+        <item>ignoreActivationGPSTitle</item>
+
+
+
+    </string-array>
+</resources>

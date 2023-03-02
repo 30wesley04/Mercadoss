@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_weight="0.8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:text="Mercado"
+                android:gravity="center"
+                android:textSize="40dp"
+                android:textColor="#0B5C71">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerM"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1">
+
+            </Spinner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="30dp"
+                android:layout_weight="0.1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:textSize="17dp"
+                    android:text="Ingresa el id del local"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="#0B5C71"
+                    android:gravity="center">
+
+                </TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/nameEditLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:errorEnabled="true"
+                    app:errorIconDrawable="@null"
+                    app:boxStrokeColor="#0B5C71"
+                    app:hintTextColor="#0B5C71"
+                    android:hint="Local">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/localEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/activeE"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginTop="30dp"
+                android:text="Activo"
+                android:textSize="20dp">
+
+            </CheckBox>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:onClick="clickBtnInsertar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.07"
+                android:text="Guardar datos"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#0B5C71">
+
+            </Button>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.07">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtMercado"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.05"
+                android:text="Mercado:"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-black">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtLocal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.05"
+                android:text="Local:"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-black">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtActivo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.05"
+                android:text="Activo economicamente:"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-black">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textLatitud"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.05"
+                android:text="Latitud:"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-black">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textLongitud"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.05"
+                android:text="Longitud:"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-black">
+
+            </TextView>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1">
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
